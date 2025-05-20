@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>X-PIANO</title>
+  <link href="./output.css" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
+</head>
+<body class="m-0 p-0 flex items-center justify-center min-h-screen bg-[#354652]">
+
+  <div class="p-[35px_40px] rounded-[20px] bg-[#181e31] text-white">
+    <header class="flex items-center justify-between">
+      <h2 class="text-xl font-semibold">X-PIANO</h2>
+
+      <div class="flex items-center gap-3 volume-slider">
+        <span class="font-medium text-[1.19rem]">Volume</span>
+        <input type="range" min="0" max="1" value="0.5" step="any"
+               class="accent-red-700 rounded-full outline-none">
+      </div>
+
+      <div class="flex items-center gap-3 keys-checkbox">
+        <span class="font-medium text-[1.19rem]">Show Keys</span>
+        <input type="checkbox" checked />
+      </div>
+    </header>
+
+    <ul class="plano-keys flex list-none mt-10">
+      <li class="key white relative h-[230px] w-[70px] rounded-md border border-black bg-gradient-to-b from-white to-[#a7a7aa]"></li>
+      <li class="key black relative z-[2] w-[44px] h-[140px] mx-[-22px] rounded-b-[5px] bg-gradient-to-b from-[#0e144b] to-[#024092]" data-key="a"><span class="absolute bottom-[13px] text-sm text-white w-full text-center">a</span></li>
+      <li class="key white relative h-[230px] w-[70px] rounded-md border border-black bg-gradient-to-b from-white to-[#a7a7aa]" data-key="w"><span class="absolute bottom-5 text-[#0733c5] text-sm w-full text-center">x</span></li>
+      <li class="key black relative z-[2] w-[44px] h-[140px] mx-[-22px] rounded-b-[5px] bg-gradient-to-b from-[#0e144b] to-[#024092]" data-key="s"><span class="absolute bottom-[13px] text-sm text-white w-full text-center">s</span></li>
+      <li class="key white relative h-[230px] w-[70px] rounded-md border border-black bg-gradient-to-b from-white to-[#a7a7aa]" data-key="e"><span class="absolute bottom-5 text-[#0733c5] text-sm w-full text-center">-</span></li>
+      <li class="key black relative z-[2] w-[44px] h-[140px] mx-[-22px] rounded-b-[5px] bg-gradient-to-b from-[#0e144b] to-[#024092]" data-key="d"><span class="absolute bottom-[13px] text-sm text-white w-full text-center">d</span></li>
+      <li class="key white relative h-[230px] w-[70px] rounded-md border border-black bg-gradient-to-b from-white to-[#a7a7aa]" data-key="f"><span class="absolute bottom-5 text-[#0733c5] text-sm w-full text-center">f</span></li>
+      <li class="key black relative z-[2] w-[44px] h-[140px] mx-[-22px] rounded-b-[5px] bg-gradient-to-b from-[#0e144b] to-[#024092]" data-key="t"><span class="absolute bottom-[13px] text-sm text-white w-full text-center">D</span></li>
+      <li class="key white relative h-[230px] w-[70px] rounded-md border border-black bg-gradient-to-b from-white to-[#a7a7aa]" data-key="g"><span class="absolute bottom-5 text-[#0733c5] text-sm w-full text-center">g</span></li>
+      <li class="key black relative z-[2] w-[44px] h-[140px] mx-[-22px] rounded-b-[5px] bg-gradient-to-b from-[#0e144b] to-[#024092]" data-key="y"><span class="absolute bottom-[13px] text-sm text-white w-full text-center">E</span></li>
+      <li class="key white relative h-[230px] w-[70px] rounded-md border border-black bg-gradient-to-b from-white to-[#a7a7aa]" data-key="h"><span class="absolute bottom-5 text-[#0733c5] text-sm w-full text-center">h</span></li>
+      <li class="key black relative z-[2] w-[44px] h-[140px] mx-[-22px] rounded-b-[5px] bg-gradient-to-b from-[#0e144b] to-[#024092]" data-key="u"><span class="absolute bottom-[13px] text-sm text-white w-full text-center">v</span></li>
+      <li class="key white relative h-[230px] w-[70px] rounded-md border border-black bg-gradient-to-b from-white to-[#a7a7aa]" data-key="j"><span class="absolute bottom-5 text-[#0733c5] text-sm w-full text-center">j</span></li>
+      <li class="key black relative z-[2] w-[44px] h-[140px] mx-[-22px] rounded-b-[5px] bg-gradient-to-b from-[#0e144b] to-[#024092]" data-key="k"><span class="absolute bottom-[13px] text-sm text-white w-full text-center">k</span></li>
+      <li class="key white relative h-[230px] w-[70px] rounded-md border border-black bg-gradient-to-b from-white to-[#a7a7aa]" data-key="o"><span class="absolute bottom-5 text-[#0733c5] text-sm w-full text-center">y</span></li>
+      <li class="key black relative z-[2] w-[44px] h-[140px] mx-[-22px] rounded-b-[5px] bg-gradient-to-b from-[#0e144b] to-[#024092]" data-key="i"><span class="absolute bottom-[13px] text-sm text-white w-full text-center">i</span></li>
+      <li class="key white relative h-[230px] w-[70px] rounded-md border border-black bg-gradient-to-b from-white to-[#a7a7aa]" data-key="p"><span class="absolute bottom-5 text-[#0733c5] text-sm w-full text-center">t</span></li>
+    </ul>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
